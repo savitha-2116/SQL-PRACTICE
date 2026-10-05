@@ -1,0 +1,5 @@
+For oracle setup
+
+docker --version
+docker run -d --name oracle-db -p 1521:1521 -e ORACLE_PASSWORD=Oracle123 gvenzl/oracle-free:23-slim
+docker exec -it oracle-db sqlplus system/Oracle123@localhost/FREE
